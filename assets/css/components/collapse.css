@@ -1,0 +1,75 @@
+.collapse-component {
+    background-color: var(--gray-fourth);
+    padding: 4rem;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    min-width: 0;
+    background-color: var(--color-white);
+    background-clip: border-box;
+    border-radius: .25rem;
+}
+
+.card-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: var(--gray-secondary);
+    border-radius: .25rem .25rem 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.card-header button {
+    border: none;
+    background-color: transparent;
+}
+
+.card-header button .image-arrow {
+    transition: transform .25s ease;
+}
+
+.card-body {
+    -webkit-box-flex: 1;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    background-color: #fff;
+}
+
+.card-body .info-body {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.card-body .info-body img {
+    width: 200px;
+    height: 150px;
+    border: 10px solid var(--gray-fourth);
+}
+
+.card-body .info-body p {
+    margin-left: 20px;
+    font-weight: 200;
+}
+
+.collapse {
+    display: none;
+}
+
+.collapse.show {
+    display: block;
+}
+
+.collapsing {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: height .35s ease;
+}

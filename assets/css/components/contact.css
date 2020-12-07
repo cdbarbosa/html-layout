@@ -1,0 +1,64 @@
+.contact-component {
+    background-color: var(--gray-secondary);
+    position: relative;
+    height: 80vh;
+}
+
+.contactus {
+    /* padding: 4rem; */
+    background-color: #454545;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    width: 100%;
+    height: 100%;
+}
+
+.contact-us {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+}
+
+.contact-us form .group {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 10px 0;
+}
+
+.contact-us form .group input, .contact-us form .group textarea {
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    padding: .5rem 1rem;
+}
+
+.contact-us form .groups {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.group-email, .group-telephone {
+    flex: 0 0 49%;
+}
+
+.actions {
+    width: 100%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+}
+
+.button-form {
+    background: var(--color-white);
+    border: none;
+    text-transform: uppercase;
+    color: #000;
+    padding: .75rem;
+    width: 120px;
+    border-radius: 5px;
+}

@@ -1,0 +1,57 @@
+#slider-pictures {
+    height: 100vh;
+    position: relative;
+}
+
+#silder-pictures img {
+    width: 100%;
+}
+
+.background-hero {
+    background-image: url('../../img/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 100vh;
+}
+
+.header-component {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding-top: 5%;
+    text-align: center;
+}
+
+.header-component h3 {
+    font-size: 30px;
+    color: var(--color-primary);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.header-component p {
+    font-size: 25px;
+    color: var(--color-secondary);
+}
+
+.header-component a > img {
+    width: 50px;
+    animation: bounce .8s linear infinite;
+}
+
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}

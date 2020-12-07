@@ -1,0 +1,35 @@
+.information-component {
+    background-color: var(--gray-secondary);
+    padding: 4rem;
+}
+
+.information {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.information-background {
+    flex: 0 0 40%;
+    margin-right: 30px;
+}
+
+.information-background img {
+    display: inline-block;
+    margin: 0 auto;
+    border: 15px solid var(--gray-terciary);
+    border-radius: 50%;
+    height: 400px;
+    width: 100%;
+}
+
+.information-details {
+    color: var(--color-white);
+}
+
+.information-details h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}

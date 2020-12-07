@@ -1,0 +1,75 @@
+@import './components/hero.css';
+@import './components/carousel.css';
+@import './components/slider.css';
+@import './components/information.css';
+@import './components/collapse.css';
+@import './components/contact.css';
+
+:root {
+    --color-primary: #546130;
+    --color-secondary: #2D3B09;
+    --color-terciary: #53612F;
+
+    --gray: #333333;
+    --gray-primary: #454545;
+    --gray-secondary: #6F6F6F;
+    --gray-terciary: #343434;
+    --gray-fourth: #BEBEBE;
+
+    --color-white: #fff;
+    --color-black: #000;
+    --text: #666;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+html, body, #root {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+button:active, button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.component {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.wrapper-component {
+    min-height: 40vh;
+    width: 100%;
+}
+
+.footer-component {
+    background-color: var(--gray-terciary);
+    color: var(--color-white);
+    padding: 1rem;
+}
+
+.footer-component .component {
+    text-align: center;
+}
+
+.footer-component .component h3 {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-size: 20px;
+}

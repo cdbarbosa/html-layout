@@ -3,9 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste</title>
+    <title>FronEnd</title>
+
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+
+    <!-- JAVASCRIPT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js" integrity="sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ==" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+    <script src="./assets/js/components/collpase.js"></script>
+    <script src="./assets/js/components/carousel.js"></script>
 </head>
 <body>
-    <h3>Teste</h3>
+    <main id="root">
+        <div class="hero-component">
+            <div id="slider-pictures" class="carousel slide" data-ride="carousel">
+                <ol id="indicators" class="carousel-indicators">
+                </ol>
+                <div id="carousel-component" class="carousel-inner">
+                </div>
+            </div>
+            <div class="header-component">
+                <Header class="component">
+                    <h3>Lorem ipsun</h3>
+                    <p>Lorem ipsum sit amet, consectetur adipiscing slit</p>
+                    <a href="#silderComponent">
+                        <img src="./assets/img/icons/arrow-down.svg" alt="Arrow Down"/>
+                    </a>
+                </Header>
+            </div>
+        </div>
+        <div id="silderComponent" class="wrapper-component slider-component">
+            <div class="carousel-component">
+                <div id="carousel-third" class="carousel-third-inner"></div>
+                <div class="actions">
+                    <button>Prev</button>
+                    <button>Next</button>
+                </div>
+            </div>
+            <h3>Slider</h3>
+        </div>
+        <div class="wrapper-component">
+            <div class="information-component">
+                <div class="information component">
+                    <div class="information-background">
+                        <img src="./assets/img/background.png" alt="Image">
+                    </div>
+                    <div class="information-details">
+                        <h3>Lorem Ipsum</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nisl
+                            sem, convallis in fermentum sed, iaculis ut erat. Nam justo
+                            tellus, fermentum vel nunc pellentesque, vehicula pellentesque
+                            nibh. Pellentesque sed sem enim.
+                          </p>
+                          <p>
+                            <b>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                              nisl sem, convallis in fermentum sed, iaculis ut erat. Nam
+                              justo tellus, fermentum vel nunc pellentesque, vehicula
+                              pellentesque nibh. Pellentesque sed sem enim.
+                            </b>
+                          </p>
+                          <p>
+                            <i>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                              nisl sem, convallis in fermentum sed, iaculis ut erat. Nam
+                              justo tellus, fermentum vel nunc pellentesque, vehicula
+                              pellentesque nibh. Pellentesque sed sem enim.
+                            </i>
+                          </p>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nisl
+                            sem, convallis in fermentum sed, iaculis ut erat. Nam justo
+                            tellus, fermentum vel nunc pellentesque, vehicula pellentesque
+                            nibh. Pellentesque sed sem enim.
+                          </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper-component">
+            <div class="collapse-component">
+                <div class="collapse-content component">
+                    <div id="accordion-collapse"></div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper-component">
+            <div class="contact-component">
+                <div class="contactus"></div>
+                <div class="contact-us component">
+                    <form action="">
+                        <div class="group-name group">
+                            <label for="">*Nome:</label>
+                            <input type="text" placeholder="Informe seu nome" class="input-name" />
+                        </div>
+                        <div class="groups">
+                            <div class="group-email group">
+                                <label for="">*Email: </label>
+                                <input type="text" placeholder="Informe seu email"/>
+                            </div>
+                            <div class="group-telephone group">
+                                <label for="">*Telefone: </label>
+                                <input type="text" placeholder="Informe seu telefone"/>
+                            </div>
+                        </div>
+                        <div class="group-mensage group">
+                            <label for="">*Mensagem</label>
+                            <textarea name="" id="" rows="5"></textarea>
+                        </div>
+                        <div class="actions">
+                            <button class="button-form">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer class="footer-component">
+            <div class="component">
+                <h3>Lorem ipsum</h3>
+            </div>
+        </footer>
+    </main>
 </body>
 </html>
