@@ -1,7 +1,3 @@
-$(document).ready(function () {
-    carousel()  
-})
-
 function carousel () {
     let html = ''
 
@@ -35,7 +31,7 @@ function handleChangeHeroSlide (i) {
     $('#indicator'+i).addClass("active")
 
     counter = i
-    
+
     const carouselInner = document.querySelector('.carousel-inner')
     const carouselItem = document.querySelectorAll('.carousel-inner .carousel-item')
     const itemSize = carouselItem[0].clientWidth

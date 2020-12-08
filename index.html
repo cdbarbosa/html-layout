@@ -18,6 +18,19 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
     <script src="./assets/js/components/collpase.js"></script>
     <script src="./assets/js/components/carousel.js"></script>
+    <script src="./assets/js/components/slider.js"></script>
+
+    <script>
+        $(document).ready(() => {
+            Promise.all([
+                carousel(),
+                collapse(),
+                carouselItem(),
+            ]).then(
+                // onRenderSlide()
+            )
+        })
+    </script>
 </head>
 <body>
     <main id="root">
@@ -41,12 +54,13 @@
         <div id="silderComponent" class="wrapper-component slider-component">
             <div class="carousel-component">
                 <div id="carousel-third" class="carousel-third-inner"></div>
-                <div class="actions">
-                    <button>Prev</button>
-                    <button>Next</button>
-                </div>
+                <button onclick="handleChange('prev')" class="carousel_button" id="carousel_button--prev">
+                    <img src="assets/img/icons/arrow-down-white.svg" alt="Prev">
+                </button>
+                <button onclick="handleChange('next')" class="carousel_button" id="carousel_button--next">
+                    <img src="assets/img/icons/arrow-down-white.svg" alt="Next">
+                </button>
             </div>
-            <h3>Slider</h3>
         </div>
         <div class="wrapper-component">
             <div class="information-component">

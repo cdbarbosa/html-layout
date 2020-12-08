@@ -44,7 +44,7 @@ function handleCollapse(i) {
         })
         elem_image.attr('src', 'assets/img/icons/arrow-down-white.svg')
         elem_image.css({'transform': 'rotate(0deg)'})
-        document.getElementsByClassName('collapsing')[0].style.height = '0px'
+        document.getElementsByClassName('collapsing')[0].style.minHeight = '0px'
         setTimeout(() => {
             elem.classList.remove('collapsing')
             elem.classList.add('collapse')
@@ -58,7 +58,7 @@ function handleCollapse(i) {
         })
         elem_image.attr('src', 'assets/img/icons/arrow-down.svg')
         elem_image.css({'transform': 'rotate(180deg)'})
-        document.getElementsByClassName('collapsing')[0].style.height = '200px'
+        document.getElementsByClassName('collapsing')[0].style.minHeight = '200px'
         setTimeout(() => {
             elem.classList.remove('collapsing')
             elem.classList.add('collapse')

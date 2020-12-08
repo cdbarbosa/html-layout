@@ -1,5 +1,142 @@
 .slider-component {
     background-color: var(--gray-primary);
-    padding: 4rem;
+    padding-top: 4rem;
+}
 
+.carousel-component {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+}
+
+.carousel-third-inner {
+    display: flex;
+    width: 100%;
+}
+
+.card-transparent {
+    -webkit-box-align: center;
+    align-items: center;
+    flex: 0 0 33.33%;
+}
+
+.card-transparent-header {
+    height: 200px;
+    width: 70%;
+    margin: 0 auto 20px auto;
+}
+
+.card-transparent-header img {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height: 100%;
+    border: 10px solid var(--gray-secondary);
+}
+
+.card-transparent-body {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    color: var(--color-white);
+}
+
+.card-transparent-body h3 {
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+.card-transparent-body p {
+    font-size: 16px;
+}
+
+.carousel_button {
+    border: none;
+    background: transparent;
+}
+
+.carousel_button img {
+    width: 40px;
+}
+
+#carousel_button--prev {
+    transform: rotate(90deg);
+    position: absolute;
+    top: 17%;
+    left: 0;
+    cursor: pointer;
+}
+
+
+
+#carousel_button--next {
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 17%;
+    right: 0;
+    cursor: pointer;
+}
+
+
+@media (max-width: 998px) {
+    .card-transparent {
+        flex: 0 0 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper-component {
+        height: 100%;
+    }
+    .slider-component {
+        padding-bottom: 0;
+        height: 90vh
+    }
+
+    .card-transparent {
+        flex: 0 0 100%;
+    }
+
+    .card-transparent-header {
+        width: 80%;
+    }
+
+    .card-transparent-body {
+        width: 90%;
+    }
+
+    #carousel_button--prev,  #carousel_button--next{
+        top: 90%;
+    }
+    #carousel_button--prev {
+        left: 35%;
+    }#carousel_button--next {
+        right: 35%;
+    }
+
+    .information {
+        flex-wrap: wrap !important;
+    }
+
+    .information-component {
+        padding: 4rem 2rem !important;
+        text-align: center;
+    }
+
+    .information-background {
+        flex: 0 0 90% !important;
+        margin-right: 0 !important;
+    }
+
+    .contact-us {
+        width: 80% !important;
+    }
+
+    .collapse-component {
+        padding: 4rem 2rem !important;
+    }
+
+    .info-body {
+        flex-direction: column;
+    }
 }
