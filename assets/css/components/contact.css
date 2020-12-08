@@ -5,7 +5,6 @@
 }
 
 .contactus {
-    /* padding: 4rem; */
     background-color: #454545;
     clip-path: polygon(100% 0, 0% 100%, 100% 100%);
     width: 100%;
@@ -28,11 +27,19 @@
     margin: 10px 0;
 }
 
+.contact-us form label {
+    font-size: 14px;
+    position: absolute;
+    top: 23%;
+    left: 5px;
+}
+
 .contact-us form .group input, .contact-us form .group textarea {
     width: 100%;
     border-radius: 5px;
     border: none;
-    padding: .5rem 1rem;
+    padding: .75rem 1rem;
+    background-color: var(--gray-fourth);
 }
 
 .contact-us form .groups {
@@ -47,9 +54,6 @@
 
 .actions {
     width: 100%;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     text-align: center;
 }
 
@@ -61,4 +65,28 @@
     padding: .75rem;
     width: 120px;
     border-radius: 5px;
+}
+
+.group-name, .group-email, .group-telephone, .group-mensage {
+    position: relative;
+}
+
+.group-name input {
+    padding-left: 3.5rem !important;
+}
+
+.group-email input {
+    padding-left: 3.5rem !important;
+}
+
+.group-telephone input {
+    padding-left: 5rem !important;
+}
+
+.group-mensage label {
+    top: 9% !important;
+}
+
+.group-mensage textarea {
+    padding-left: 5.5rem !important;
 }

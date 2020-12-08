@@ -20,8 +20,13 @@
     top: 0%;
     left: 50%;
     transform: translate(-50%, 0);
-    padding-top: 5%;
     text-align: center;
+    width: 100%;
+}
+
+.header-component .text {
+    padding-top: 5%;
+    padding-bottom: 2%;
 }
 
 .header-component h3 {

@@ -5,6 +5,9 @@
 @import './components/collapse.css';
 @import './components/contact.css';
 
+
+@import './topograph/media.css';
+
 :root {
     --color-primary: #546130;
     --color-secondary: #2D3B09;

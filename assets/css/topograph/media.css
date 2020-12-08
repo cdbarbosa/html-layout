@@ -1,0 +1,83 @@
+@media (max-width: 998px) {
+    .card-transparent {
+        flex: 0 0 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper-component {
+        height: 100%;
+    }
+    .slider-component {
+        padding-bottom: 0;
+        height: 90vh
+    }
+
+    .card-transparent {
+        flex: 0 0 100%;
+    }
+
+    .card-transparent-header {
+        width: 80%;
+    }
+
+    .card-transparent-body {
+        width: 90%;
+    }
+
+    #carousel_button--prev,  #carousel_button--next{
+        top: 90%;
+    }
+    #carousel_button--prev {
+        left: 35%;
+    }
+    #carousel_button--next {
+        right: 35%;
+    }
+
+    .information {
+        flex-wrap: wrap !important;
+    }
+
+    .information-component {
+        padding: 4rem 2rem !important;
+        text-align: center;
+    }
+
+    .information-background {
+        flex: 0 0 90% !important;
+        margin-right: 0 !important;
+    }
+
+    .information-background img {
+        height: 290px !important;
+        width: 55%;
+    }
+
+    .contact-us {
+        width: 80% !important;
+    }
+
+    .collapse-component {
+        padding: 4rem 2rem !important;
+    }
+
+    .info-body {
+        flex-direction: column;
+    }
+
+    .header-component .text {
+        background-color: var(--gray-primary);
+        color: var(--color-white);
+    }
+
+    .header-component .text h3, .header-component .text p {
+        color: var(--color-white);
+    }
+}
+
+@media (max-width: 420px) {
+    .information-background img {
+        width: 100% !important;
+    }
+}
