@@ -1,6 +1,6 @@
 # DOT FrontEnd Teste
 
-![alt Screenshot 1](./src/assets/img/screenshot.png)
+![alt Screenshot 1](./assets/img/screenshot.png)
 
 ## Desafio
 
